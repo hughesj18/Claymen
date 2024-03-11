@@ -1,4 +1,6 @@
 {
   "item.claymen.claydoll": "Claydoll",
-  "item.claymen.clod": "Clod"
+  "item.claymen.clod": "Clod",
+
+  "itemgroup.claymen": "Claymen Group"
 }
