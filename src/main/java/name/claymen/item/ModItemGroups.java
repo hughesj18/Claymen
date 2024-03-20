@@ -2,6 +2,7 @@ package name.claymen.item;
 
 import name.claymen.Claymen;
 
+import name.claymen.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,8 +17,12 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.claymen"))
                     .icon(() -> new ItemStack(ModItems.CLAYDOLL)).entries((displayContext, entries) -> {
 
+                        //Adds items to mod group
                         entries.add(ModItems.CLAYDOLL);
                         entries.add(ModItems.CLOD);
+
+                        //Adds blocks to mod gorup
+                        entries.add(ModBlocks.CLAY_POT);
                     }).build());
 
     public static void registerItemGroups(){
